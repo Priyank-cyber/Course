@@ -43,7 +43,7 @@
   <body>
     <%- include('../partials/header.ejs') %>
     <div class="container w-50">
-      <p class="mb-0 error-message"><%=success%><%=error%></p>
+      <p class="mb-0 error-message"><%=success%><%=error%><%=accMsg%></p>
       <h1 class="mb-5">Registration</h1>
       <form action="/register" method="post" onsubmit="return validateForm()">
         <div class="form-group">

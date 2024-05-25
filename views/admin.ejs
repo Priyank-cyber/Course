@@ -20,7 +20,7 @@
                         <a class="nav-link" href="#">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/login">Logout</a>
+                        <a class="nav-link" href="/logout">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -33,6 +33,12 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="#" onclick="openAddCourseForm()">Add Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/activate">Activate Accounts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/editattempts" onclick="">Edit Login Attempts</a>
                         </li>
                     </ul>
                 </div>
@@ -67,6 +73,14 @@
         function openAddCourseForm() {
             document.getElementById("addCourseForm").style.display = "block";
         }
+
+        <!-- Add this script to your account pages -->
+  // Check if the user is logged in
+//   if (!sessionStorage.getItem('isLoggedIn')) {
+    // If not logged in, redirect to the login page
+//     window.location.href = '/login';
+//   }
+
     </script>
 </body>
 </html>
