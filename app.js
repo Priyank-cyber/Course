@@ -114,7 +114,7 @@ app.get("/confirm/:token", (req, res) => {
     }
 
     const updateQuery = 'UPDATE users SET account_status = ? WHERE confirmation_token = ?';
-    db.query(updahteQuery, ['active', token], (updateErr, updateResult) => {
+    db.query(updateQuery, ['active', token], (updateErr, updateResult) => {
       if (updateErr) {
         console.error(updateErr);
         return res.send("Error activating your account. Please try again later.");
